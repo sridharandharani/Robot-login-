@@ -9,7 +9,8 @@ Test Teardown   log  Inside test teardown
 ${google_search}    https://www.google.com/
 ${search_query}     flipkart
 ${search_product}   Iphone
-${email}    dharansri916@gmail.com
+${email}    7904464500
+${password}  7904464500
 *** Test Cases ***
 google search test
     [Documentation]  Test to open google
@@ -41,6 +42,14 @@ buying flipkart test
     sleep  2s
     click Button  class:_20xBvF
     sleep  3s
+    password
+    sleep  2s
+    click Button  class:_20xBvF
+    sleep  3s
+    click Button  class:_1seccl
+    sleep  3s
+    click Button  class:_3dESVI
+    sleep  5s
 
 
 
@@ -52,3 +61,5 @@ Search flip data
     Input Text  name:q  ${search_product}
 email address
     Input Text  class:_17N0em   ${email}
+password
+    Input Text  xpath=//html/body/div[1]/div/div[2]/div/div[1]/div[1]/div/div/div/div/div[1]/div/form/div[2]/input  ${password}
